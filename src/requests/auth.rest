@@ -1,0 +1,27 @@
+### Register
+POST http://localhost:4000/auth/register HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Sherifdeen Adebayo",
+    "email": "herdeybayor4real@gmail.com",
+    "password": "password",
+    "level": "100",
+    "departmentId": "641057990e5e6e04a904facb",
+    "matric": "210551003",
+    "registerAs": "student"
+}
+
+### Login
+POST http://localhost:4000/auth/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "matric": "210551003",
+    "password": "password"
+}
+
+### Get all users
+GET http://localhost:4000/users HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MTBlMzMxMTY3YjA0ZjA3MmQ5ZGQyMyIsInJvbGUiOiJzdHVkZW50IiwiaWF0IjoxNjc4ODM1ODYxLCJleHAiOjE2Nzg4Mzk0NjF9.wWQ_vwg-FxSTJZfgJh-4qTk0xixAlncRVD5m3vHgRvI
