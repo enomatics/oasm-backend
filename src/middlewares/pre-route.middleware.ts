@@ -19,7 +19,7 @@ export default (app: Application) => {
         cors({
             credentials: true,
             exposedHeaders: ["set-cookie"],
-            origin: ["http://localhost:3000", "https://oasm-frontend.vercel.app"]
+            origin: ["http://localhost:3000", "https://oasm.vercel.app"]
         })
     );
 
